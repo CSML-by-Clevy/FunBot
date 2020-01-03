@@ -1,0 +1,26 @@
+start:
+  say Typing(1000)
+  say "Hi I'm FunBot!"
+  say Typing(1000)
+  say Image("https://media.giphy.com/media/xiJXFeua9tMqc/giphy.gif")
+  say Typing(1000)
+  goto choice
+
+choice:
+  use Button("Show me the kitties") as cats
+  use Button("Tell me a funny joke") as joke
+  say Question(
+    title = "What can I do to make you laugh?",
+    buttons = [cats, joke]
+  )
+  hold
+
+  if (event match cats) {
+    goto flow CatGifs
+  }
+  if (event match joke) {
+    goto flow RandomJoke
+  }
+
+  say "Hmmm. I'm sorry {{firstname}}, I'm afraid I can not do that."
+  goto choice
