@@ -4,11 +4,11 @@ start:
   goto joke
 
 joke:
-  use Button("Hilarious! 😂") as btyes
-  use Button("Not really 😱") as btno
+  do btyes = Button("Hilarious! 😂")
+  do btno = Button("Not really 😱")
 
   say Typing(2000)
-  use Fn("get_api", url="https://official-joke-api.appspot.com/random_joke") as newjoke
+  do newjoke = HTTP("https://official-joke-api.appspot.com/random_joke").send()
   say newjoke.setup
   say Typing(1500)
   say newjoke.punchline

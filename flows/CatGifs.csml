@@ -11,7 +11,7 @@ hereIsACat:
     "How cute is this one ?",
     "I love cat too you know..."
   ])
-  use Fn("get_api", url="https://aws.random.cat/meow") as newCat
+  do newCat = HTTP("https://aws.random.cat/meow").send()
   say Image(newCat.file)
   say "Just say 'stop' If you got enough cat for the day, or type anything to continue."
   hold

@@ -25,19 +25,6 @@
     }
   ],
   "files": [],
-  "functions": [
-    {
-      "name": "get_api",
-      "description": null,
-      "args": [
-        "url=\"\""
-      ],
-      "import_url": "https://github.com/CSML-by-Clevy/flows/raw/master/functions/get_request/get_api.zip?name=get_api&handler=index.handler&args=url%3D%22%22&runtime=nodejs10.x",
-      "runtime": "nodejs10.x",
-      "handler": "index.handler",
-      "app_id": null,
-      "version": null
-    }
-  ],
+  "functions": [],
   "apps": []
 }
