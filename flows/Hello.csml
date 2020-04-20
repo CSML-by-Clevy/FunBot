@@ -7,10 +7,10 @@ start:
   goto choice
 
 choice:
-  use Button("Show me the kitties") as cats
-  use Button("Tell me a funny joke") as joke
+  do cats = Button("Show me the kitties")
+  do joke = Button("Tell me a funny joke")
   say Question(
-    title = "What can I do to make you laugh?",
+    "What can I do to make you laugh?",
     buttons = [cats, joke]
   )
   hold
