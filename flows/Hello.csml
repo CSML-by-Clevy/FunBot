@@ -11,7 +11,8 @@ choice:
   do joke = Button("Tell me a funny joke")
   say Question(
     "What can I do to make you laugh?",
-    buttons = [cats, joke]
+     button_type="quick_reply",
+     buttons = [cats, joke]
   )
   hold
 
