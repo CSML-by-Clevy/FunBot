@@ -26,5 +26,19 @@
   ],
   "files": [],
   "functions": [],
-  "apps": []
+  "apps": [
+    {
+      "name": "giphy",
+      "description": "Find random GIFs and stickers relevant to your chatbot conversation. Powered by Giphy.",
+      "args": [
+        "action=\"gif|sticker\"",
+        "query=\"\""
+      ],
+      "runtime": "nodejs12.x",
+      "handler": "index.handler",
+      "environment": {},
+      "app_id": "7c8ce645-fb76-4d8f-ab47-90f4ffe3ca8a",
+      "version": "1.1.0"
+    }
+  ]
 }
