@@ -23,5 +23,7 @@ choice:
     goto flow RandomJoke
   }
 
-  say "Hmmm. I'm sorry {{firstname}}, I'm afraid I can not do that."
+  if (_metadata.firstname) say "Hmmm. I'm sorry {{_metadata.firstname}}, I'm afraid I can not do that."
+  else say "Hmmm. I'm sorry, I'm afraid I can not do that."
+
   goto choice
