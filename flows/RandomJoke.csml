@@ -14,6 +14,7 @@ joke:
   say newjoke.punchline
   say Question(
     title="How funny was this joke?",
+    button_type="quick_reply",
     buttons=[btyes, btno]
   )
   hold
