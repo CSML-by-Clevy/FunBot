@@ -11,8 +11,8 @@ hereIsACat:
     "How cute is this one ?",
     "I love cat too you know..."
   ])
-  do newCat = HTTP("https://aws.random.cat/meow").send()
-  say Image(newCat.file)
+  do cats = Fn("giphy", action="gif", query="cat")
+  say Image(OneOf(cats))
   say "Just say 'stop' If you got enough cat for the day, or type anything to continue."
   hold
 
