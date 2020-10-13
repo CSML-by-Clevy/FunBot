@@ -8,10 +8,10 @@ joke:
   do btno = Button("Not really 😱")
 
   say Typing(2000)
-  do newjoke = HTTP("https://official-joke-api.appspot.com/random_joke").send()
+  do newjoke = HTTP("https://sv443.net/jokeapi/v2/joke/Pun?blacklistFlags=nsfw&type=twopart").send()
   say newjoke.setup
   say Typing(1500)
-  say newjoke.punchline
+  say newjoke.delivery
   say Question(
     title="How funny was this joke?",
     button_type="quick_reply",
